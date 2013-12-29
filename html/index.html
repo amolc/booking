@@ -1,0 +1,48 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h2 Hello {{name}}
+    h2 {{tweetuser}}
+    div(ng-view)
+    ul.twitterslide
+    each kw in data.keywords
+     li= kw
+   
+
+  script(src='/socket.io/socket.io.js')
+  script(src='bower_components/angular/angular.js')
+  script(src='bower_components/angular-socket-io/socket.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
+  
+  <html ng-app>
+    <head>
+       <script src="/assets/js/jquery.js"></script>
+       <script src="/javascripts/angular.min.js"></script>
+       <script src="/socket.io/socket.io.js"></script>
+  	   <script src="bower_components/angular/angular.js"></script>
+  	   <script src="bower_components/angular-socket-io/socket.js"></script>
+       <script src="js/app.js"></script>
+       <script src="js/services.js"></script>
+       <script src="js/controllers.js"></script>
+       <script src="js/filters.js"></script>
+       <script src="js/directives.js"></script>
+       
+       
+       
+    </head>
+    <body>
+      <div>
+        <input type="text" ng-model="name" />
+        <hr>
+        {% raw %}
+        <h1>Hello {{name}}!</h1>
+        {% endraw %}
+      </div>
+    </body>
+  </html>
+  

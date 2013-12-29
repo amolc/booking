@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="public/bower_components/angular-socket-io/|public/bower_components/angular/|public/js/|routes/" kind="src" path=""/>
+	<classpathentry kind="src" path="public/bower_components/angular"/>
+	<classpathentry kind="src" path="public/bower_components/angular-socket-io"/>
+	<classpathentry kind="src" path="public/js"/>
+	<classpathentry kind="src" path="routes"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
